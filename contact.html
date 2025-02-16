@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        main {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Мой путь к успеху</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="about.html">Обо мне</a></li>
+                <li><a href="blog.html">Статьи</a></li>
+                <li><a href="contact.html">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <h2>Контакты</h2>
+        <p>Если у вас есть вопросы или предложения, свяжитесь со мной через форму ниже.</p>
+        
+        <form action="#" method="post">
+            <label for="name">Ваше имя:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Ваш Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Ваше сообщение:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+            
+            <button type="submit">Отправить</button>
+        </form>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 Мой путь к успеху | Все права защищены</p>
+    </footer>
+</body>
+</html>
